@@ -1,0 +1,83 @@
+button {
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    padding: 20px 60px;
+    background-color:rgb(62, 160, 131);
+}
+    
+.botao {
+    color: black;
+}
+.button {
+    padding: 30px;
+}
+
+nav {
+    background-color:darkgrey;
+    padding: 30px;
+    font-size: 20px;
+    text-align: end;
+} 
+
+
+/* Imagens dos cards */
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+/* Cards com a mesma altura */
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Conteúdo dos cards */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Descrição ocupa o espaço disponível */
+.card-text {
+    flex-grow: 1;
+}
+
+/* Botões padronizados */
+.card-body a {
+    display: block;
+    width: 100%;
+    margin-top: auto;
+    text-decoration: none;
+}
+
+.card-body a button {
+    width: 100%;
+    min-height: 42px;
+    border: none;
+    border-radius: 6px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Efeito ao passar o mouse */
+.card-body a button:hover {
+    background-color: #0b5ed7;
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 576px) {
+    .card-img-top {
+        height: 200px;
+    }
+}
+
